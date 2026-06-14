@@ -1,0 +1,27 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://commenttodm.com/",
+      "describedby": [
+        {
+          "href": "https://commenttodm.com/.well-known/agent-skills/index.json",
+          "type": "application/json"
+        }
+      ]
+    },
+    {
+      "anchor": "https://app.commenttodm.com/",
+      "service-doc": [
+        {
+          "href": "https://commenttodm.com/blog/linkedin-comment-dm-automation-guide/",
+          "type": "text/html"
+        }
+      ],
+      "status": [
+        {
+          "href": "https://app.commenttodm.com/health"
+        }
+      ]
+    }
+  ]
+}

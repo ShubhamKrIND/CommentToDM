@@ -1577,5 +1577,59 @@ function App() {
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<App/>);
 </script>
+<script>
+if (typeof navigator !== 'undefined' && 'modelContext' in navigator) {
+  navigator.modelContext.provideContext({
+    tools: [
+      {
+        name: 'get_started',
+        description: 'Sign up for CommentToDM to start automating LinkedIn comment-to-DM workflows. Opens the signup page.',
+        inputSchema: { type: 'object', properties: {} },
+        execute: async () => {
+          window.location.href = 'https://app.commenttodm.com/signup';
+          return { action: 'redirecting to signup' };
+        }
+      },
+      {
+        name: 'get_pricing',
+        description: 'Get CommentToDM pricing information.',
+        inputSchema: { type: 'object', properties: {} },
+        execute: async () => ({
+          price: '$99/month',
+          billing: 'Monthly, cancel anytime',
+          includes: ['Unlimited automations', 'Unlimited DMs', '4,800+ accounts supported', '5-minute setup', 'LinkedIn-safe operation'],
+          signup_url: 'https://app.commenttodm.com/signup'
+        })
+      },
+      {
+        name: 'learn_how_it_works',
+        description: 'Get a description of how CommentToDM works — monitors LinkedIn post comments for keywords and sends personalized DMs automatically.',
+        inputSchema: { type: 'object', properties: {} },
+        execute: async () => ({
+          summary: 'CommentToDM watches your LinkedIn posts for comments containing your chosen keyword trigger, then instantly sends a personalized DM to each commenter.',
+          steps: [
+            '1. You post on LinkedIn and ask people to comment a keyword (e.g. "send me the guide")',
+            '2. CommentToDM detects the comment in real time',
+            '3. A personalized DM is sent automatically to the commenter',
+            '4. Your post gets more engagement, boosting reach 3×'
+          ],
+          guide_url: 'https://commenttodm.com/blog/linkedin-comment-dm-automation-guide/',
+          skill_url: 'https://commenttodm.com/.well-known/agent-skills/commenttodm-setup/SKILL.md'
+        })
+      },
+      {
+        name: 'contact_support',
+        description: 'Get CommentToDM support contact information.',
+        inputSchema: { type: 'object', properties: {} },
+        execute: async () => ({
+          email: 'hi@commenttodm.com',
+          privacy_email: 'privacy@commenttodm.com',
+          website: 'https://commenttodm.com'
+        })
+      }
+    ]
+  });
+}
+</script>
 </body>
 </html>

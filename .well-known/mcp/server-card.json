@@ -1,0 +1,20 @@
+{
+  "name": "com.commenttodm/marketing-site",
+  "title": "CommentToDM",
+  "description": "CommentToDM automatically sends personalized LinkedIn DMs to people who comment trigger keywords on your posts. $99/month flat. Zero bans across 4,800+ accounts.",
+  "version": "1.0.0",
+  "websiteUrl": "https://commenttodm.com",
+  "icons": [
+    {
+      "src": "https://commenttodm.com/favicon.ico",
+      "sizes": "any"
+    }
+  ],
+  "_meta": {
+    "com.commenttodm": {
+      "signup": "https://app.commenttodm.com/signup",
+      "login": "https://app.commenttodm.com/login",
+      "support": "hi@commenttodm.com"
+    }
+  }
+}

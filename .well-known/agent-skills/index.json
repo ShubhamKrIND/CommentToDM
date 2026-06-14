@@ -1,0 +1,12 @@
+{
+  "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
+  "skills": [
+    {
+      "name": "commenttodm-setup",
+      "type": "skill-md",
+      "description": "Set up LinkedIn comment-to-DM automation using CommentToDM. Explains how to configure automated personalized DMs triggered by post comments.",
+      "url": "/.well-known/agent-skills/commenttodm-setup/SKILL.md",
+      "digest": "sha256:c5375cc34373f653644978a1950058cb20c67f62d53c943c151bf59deb8ec57c"
+    }
+  ]
+}
