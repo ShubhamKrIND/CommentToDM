@@ -3,7 +3,23 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>CommentToDM — LinkedIn's only sustainable comment-to-DM tool</title>
+<title>CommentToDM — Turn LinkedIn Comments Into Instant DMs | $99/mo</title>
+<meta name="description" content="Auto-reply to every LinkedIn commenter with a personalized DM. Zero bans across 4,800+ accounts. Boost post reach 3×. 5-min setup. $99/mo flat.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://commenttodm.com/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://commenttodm.com/">
+<meta property="og:title" content="CommentToDM — Turn LinkedIn Comments Into Instant DMs">
+<meta property="og:description" content="Auto-reply to every LinkedIn commenter with a personalized DM. Zero bans, 4,800+ creators, 5-min setup. $99/mo flat.">
+<meta property="og:site_name" content="CommentToDM">
+<meta property="og:image" content="https://commenttodm.com/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="CommentToDM — Turn LinkedIn Comments Into Instant DMs">
+<meta name="twitter:description" content="Auto-reply to every LinkedIn commenter with a personalized DM. Zero bans, 4,800+ creators, $99/mo flat.">
+<meta name="twitter:image" content="https://commenttodm.com/og.png">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"CommentToDM","description":"LinkedIn comment-to-DM automation tool. Auto-replies to every commenter with a personalized DM. Zero bans across 4,800+ accounts.","url":"https://commenttodm.com","applicationCategory":"BusinessApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"99","priceCurrency":"USD","billingPeriod":"P1M"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"127"},"publisher":{"@type":"Organization","name":"Sbl.so","url":"https://sbl.so"}}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
@@ -178,14 +194,15 @@ function Nav() {
             ['Why us', '#why'],
             ['Creators', '#creators'],
             ['FAQ', '#faq'],
+            ['Blog', '/blog/'],
           ].map(([t, h]) => (
             <a key={h} href={h} className="rounded-md px-3 py-2 text-ink-700 hover:bg-surf-soft transition-colors">{t}</a>
           ))}
         </nav>
 
         <div className="flex items-center gap-2">
-          <a href="#" className="hidden md:inline-flex h-9 items-center whitespace-nowrap rounded-lg px-3 text-sm text-ink-700 hover:bg-surf-soft">Sign in</a>
-          <a href="#cta" className="inline-flex h-9 items-center gap-1.5 whitespace-nowrap rounded-[8px] bg-brand-500 px-3.5 text-sm font-medium text-white hover:bg-brand-600 shadow-soft transition-colors">
+          <a href="https://app.commenttodm.com/login" className="hidden md:inline-flex h-9 items-center whitespace-nowrap rounded-lg px-3 text-sm text-ink-700 hover:bg-surf-soft">Sign in</a>
+          <a href="https://app.commenttodm.com/signup" className="inline-flex h-9 items-center gap-1.5 whitespace-nowrap rounded-[8px] bg-brand-500 px-3.5 text-sm font-medium text-white hover:bg-brand-600 shadow-soft transition-colors">
             Get started · $99/mo <I.ArrowRight size={14} />
           </a>
         </div>
@@ -526,7 +543,7 @@ function Hero() {
             </p>
 
             <div className="mt-7 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
-              <a href="#cta" className="inline-flex h-12 items-center justify-center gap-2 rounded-[10px] bg-brand-500 px-5 text-[15px] font-medium text-white shadow-lift hover:bg-brand-600 transition-colors">
+              <a href="https://app.commenttodm.com/signup" className="inline-flex h-12 items-center justify-center gap-2 rounded-[10px] bg-brand-500 px-5 text-[15px] font-medium text-white shadow-lift hover:bg-brand-600 transition-colors">
                 Get started at $99/mo <I.ArrowRight size={16}/>
               </a>
               <a href="#how" className="inline-flex h-12 items-center justify-center gap-2 text-[14px] font-medium text-ink-600 hover:text-ink-900 transition-colors">
@@ -1129,7 +1146,7 @@ function Founder() {
               When someone comments on your thought-leadership post, they're already interested in what you do. Route every commenter into a private conversation — share a demo link, book a call, or send a case study. No cold outreach. They came to you first.
             </p>
             <div className="mt-7 flex flex-wrap gap-3">
-              <a href="#cta" className="inline-flex h-11 items-center gap-1.5 rounded-[10px] bg-white px-4 text-[14px] font-medium text-brand-900 hover:bg-white/90 transition-colors">
+              <a href="https://app.commenttodm.com/signup" className="inline-flex h-11 items-center gap-1.5 rounded-[10px] bg-white px-4 text-[14px] font-medium text-brand-900 hover:bg-white/90 transition-colors">
                 Get started at $99/mo <I.ArrowRight size={14}/>
               </a>
             </div>
@@ -1395,7 +1412,7 @@ function FinalCTA() {
                 Set up in 5 minutes. Runs on every post, forever. One flat price. Just more reach, more connections, and more conversations — automatically.
               </p>
               <div className="mt-7 flex flex-col sm:flex-row gap-3">
-                <a href="#" className="inline-flex h-12 items-center justify-center gap-2 rounded-[10px] bg-white px-5 text-[15px] font-semibold text-brand-900 hover:bg-white/90 transition-colors">
+                <a href="https://app.commenttodm.com/signup" className="inline-flex h-12 items-center justify-center gap-2 rounded-[10px] bg-white px-5 text-[15px] font-semibold text-brand-900 hover:bg-white/90 transition-colors">
                   Get started at $99/mo <I.ArrowRight size={16}/>
                 </a>
               </div>
@@ -1445,24 +1462,85 @@ function FinalCTA() {
 function Footer() {
   return (
     <footer className="bg-white border-t border-line">
-      <div className="mx-auto max-w-7xl px-5 py-10">
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-6">
-          <div className="flex items-center gap-2.5">
-            <Logo/>
-            <div>
-              <p className="text-[14px] font-semibold text-ink-900">CommentToDM</p>
-              <p className="text-[11.5px] text-ink-500">by Sbl.so · Built for LinkedIn creators</p>
+      <div className="mx-auto max-w-7xl px-5 py-14">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1.6fr_1fr_1fr_1fr] gap-10 lg:gap-8">
+          {/* Brand */}
+          <div>
+            <div className="flex items-center gap-2.5">
+              <Logo/>
+              <div>
+                <p className="text-[14px] font-semibold text-ink-900">CommentToDM</p>
+                <p className="text-[11.5px] text-ink-500">by Sbl.so</p>
+              </div>
+            </div>
+            <p className="mt-4 text-[13.5px] leading-relaxed text-ink-500 max-w-xs">
+              LinkedIn's only sustainable comment-to-DM tool. Zero bans, personalized at scale, $99/mo flat.
+            </p>
+            <div className="mt-5 flex items-center gap-2">
+              <a href="https://www.youtube.com/@ai-sales-automation" target="_blank" rel="noopener noreferrer"
+                 aria-label="YouTube"
+                 className="inline-flex h-9 w-9 items-center justify-center rounded-lg border border-line bg-white text-ink-600 hover:bg-surf-soft hover:text-ink-900 transition-colors">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.52 3.5 12 3.5 12 3.5s-7.52 0-9.38.55A3.02 3.02 0 0 0 .5 6.19C0 8.07 0 12 0 12s0 3.93.5 5.81a3.02 3.02 0 0 0 2.12 2.14C4.48 20.5 12 20.5 12 20.5s7.52 0 9.38-.55a3.02 3.02 0 0 0 2.12-2.14C24 15.93 24 12 24 12s0-3.93-.5-5.81zM9.75 15.52V8.48L15.5 12l-5.75 3.52z"/>
+                </svg>
+              </a>
+              <a href="https://www.linkedin.com/company/sales-automation-sbl" target="_blank" rel="noopener noreferrer"
+                 aria-label="LinkedIn"
+                 className="inline-flex h-9 w-9 items-center justify-center rounded-lg border border-line bg-white text-ink-600 hover:bg-surf-soft hover:text-ink-900 transition-colors">
+                <I.Linkedin size={15}/>
+              </a>
             </div>
           </div>
-          <nav className="flex flex-wrap items-center gap-1 text-[13px] text-ink-600">
-            <a className="rounded-md px-3 py-1.5 hover:bg-surf-soft" href="#">Privacy</a>
-            <a className="rounded-md px-3 py-1.5 hover:bg-surf-soft" href="#">Terms</a>
-            <a className="rounded-md px-3 py-1.5 hover:bg-surf-soft" href="#">Contact</a>
-            <a className="rounded-md px-3 py-1.5 hover:bg-surf-soft" href="#cta">Status</a>
-          </nav>
+
+          {/* Product */}
+          <div>
+            <p className="text-[11px] font-semibold uppercase tracking-widest text-ink-400">Product</p>
+            <ul className="mt-4 flex flex-col gap-2.5">
+              {[
+                ['How it works', '/#how'],
+                ['Use cases', '/#cases'],
+                ['Why CommentToDM', '/#why'],
+                ['Creator stories', '/#creators'],
+                ['FAQ', '/#faq'],
+              ].map(([l, h]) => (
+                <li key={l}><a href={h} className="text-[13.5px] text-ink-600 hover:text-ink-900 transition-colors">{l}</a></li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Blog */}
+          <div>
+            <p className="text-[11px] font-semibold uppercase tracking-widest text-ink-400">Blog</p>
+            <ul className="mt-4 flex flex-col gap-2.5">
+              {[
+                ['Comment-to-DM guide', '/blog/linkedin-comment-dm-automation-guide/'],
+                ['3× your LinkedIn reach', '/blog/grow-linkedin-reach-with-comment-triggers/'],
+                ['Is LinkedIn automation safe?', '/blog/is-linkedin-automation-safe/'],
+                ['All articles', '/blog/'],
+              ].map(([l, h]) => (
+                <li key={l}><a href={h} className="text-[13.5px] text-ink-600 hover:text-ink-900 transition-colors">{l}</a></li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Legal & Account */}
+          <div>
+            <p className="text-[11px] font-semibold uppercase tracking-widest text-ink-400">Company</p>
+            <ul className="mt-4 flex flex-col gap-2.5">
+              {[
+                ['Privacy policy', '/privacy/'],
+                ['Terms of service', '/terms/'],
+                ['Contact us', 'mailto:hi@commenttodm.com'],
+                ['Sign in', 'https://app.commenttodm.com/login'],
+              ].map(([l, h]) => (
+                <li key={l}><a href={h} className="text-[13.5px] text-ink-600 hover:text-ink-900 transition-colors">{l}</a></li>
+              ))}
+            </ul>
+          </div>
         </div>
-        <div className="mt-6 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-[12px] text-ink-500">
-          <p>© 2026 CommentToDM. All rights reserved.</p>
+
+        <div className="mt-10 flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-t border-line pt-8 text-[12px] text-ink-500">
+          <p>© 2026 CommentToDM · A product by <a href="https://sbl.so" className="hover:text-ink-800 underline underline-offset-2">Sbl.so</a>. All rights reserved.</p>
           <p className="inline-flex items-center gap-1.5">
             <span className="h-1.5 w-1.5 rounded-full bg-[#2E6E28] live-dot"/>
             All systems normal · DMs delivering in under 30 minutes
